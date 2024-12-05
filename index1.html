@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BayHaus Partners & Advisors LLC</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: url('background.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        header a {
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            flex: 1 1 calc(33% - 40px);
+            max-width: calc(33% - 40px);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 100%;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>BayHaus Partners & Advisors LLC</h1>
+        <p>Expert Guidance for Startups in the San Francisco Bay Area</p>
+        <a href="#about">Learn More</a>
+    </header>
+
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>We are Stewart Hauser and Andreas Bayer, experienced startup veterans from Silicon Valley. With extensive leadership roles such as CEO, CTO, COO, CFO, and legal counsel, we specialize in helping startups gain traction, recover from setbacks, or accelerate growth.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="section" id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Traction Building</h3>
+                <p>We help you establish a strong market presence and attract the right customers.</p>
+            </div>
+            <div class="card">
+                <h3>Growth Acceleration</h3>
+                <p>Our expertise ensures your startup scales effectively post-funding.</p>
+            </div>
+            <div class="card">
+                <h3>Crisis Management</h3>
+                <p>We stabilize operations and help recover from challenging situations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to take your startup to the next level? Reach out to us for a consultation.</p>
+        <p>Email: <a href="mailto:info@bayhaus.com">info@bayhaus.com</a></p>
+        <p>Location: San Francisco Bay Area, CA</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BayHaus Partners & Advisors LLC. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+
