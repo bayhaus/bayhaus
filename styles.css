@@ -1,0 +1,150 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: url('background.png') no-repeat center center/cover;
+    height: 70vh; /* Adjusted height for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.8rem; /* Adjusted size */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem; /* Adjusted size */
+    margin-bottom: 20px;
+}
+
+header a {
+    text-decoration: none;
+    background: #f96c38; /* Updated button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+header a:hover {
+    background: #e05726; /* Darker hover effect */
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #f96c38;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Stack cards vertically */
+        max-width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    header {
+        height: 50vh; /* Reduce height */
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+
+    header p {
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    header a {
+        font-size: 1rem;
+        padding: 10px 20px; /* Smaller button padding */
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+}
