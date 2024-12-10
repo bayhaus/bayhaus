@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
     line-height: 1.6;
     color: #333;
 }
@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
     background: url('background.png') no-repeat center center/cover;
-    height: 70vh; /* Adjusted height for smaller screens */
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,30 +22,44 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
 
+/* Menu Styles */
+header .menu {
+    position: absolute;
+    top: 10px; /* Moved the menu up by 10px */
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none; /* Remove list-style for cleaner text links */
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem; /* Increased font size */
+    font-weight: 400; /* Less bold */
+    transition: color 0.3s ease;
+    text-transform: capitalize; /* Optionally add this for a more formal look */
+    padding: 0; /* Remove any padding */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+header .menu a:hover {
+    color: #f96c38; /* Hover color change only */
+}
+
+/* Header Title */
 header h1 {
-    font-size: 2.8rem; /* Adjusted size */
+    font-size: 3rem; /* Larger font for the header */
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.2rem; /* Adjusted size */
+    font-size: 1.5rem; /* Increased font size for the tagline */
     margin-bottom: 20px;
-}
-
-header a {
-    text-decoration: none;
-    background: #f96c38; /* Updated button color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    transition: background 0.3s ease;
-}
-
-header a:hover {
-    background: #e05726; /* Darker hover effect */
 }
 
 /* Section */
@@ -93,8 +107,28 @@ header a:hover {
     margin-bottom: 10px;
 }
 
-.card p {
+/* Custom List Styling */
+.service-list {
+    display: grid;
+    gap: 10px;
+    text-align: left;
+    list-style: none;
+}
+
+.service-item {
     font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-item::before {
+    content: '•';
+    color: #f96c38;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -117,27 +151,22 @@ footer a:hover {
 /* Mobile Styles */
 @media (max-width: 768px) {
     .card {
-        flex: 1 1 100%; /* Stack cards vertically */
-        max-width: 100%; /* Full width on smaller screens */
+        flex: 1 1 100%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
     header {
-        height: 50vh; /* Reduce height */
+        height: 50vh;
         padding: 20px;
     }
 
     header h1 {
-        font-size: 2rem; /* Smaller font size */
+        font-size: 2rem;
     }
 
     header p {
-        font-size: 1rem; /* Smaller font size */
-    }
-
-    header a {
         font-size: 1rem;
-        padding: 10px 20px; /* Smaller button padding */
     }
 
     .section h2 {
@@ -146,5 +175,18 @@ footer a:hover {
 
     .section p {
         font-size: 1rem;
+    }
+
+    /* Keep the menu in the upper right corner on mobile */
+    header .menu {
+        position: absolute; /* Ensure the menu stays absolute */
+        top: 10px; /* Adjust for better alignment */
+        right: 20px;
+        flex-direction: row; /* Maintain horizontal layout on mobile */
+        gap: 20px;
+    }
+
+    header .menu a {
+        font-size: 1.1rem;
     }
 }
