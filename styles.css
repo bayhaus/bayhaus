@@ -53,13 +53,14 @@ header .menu a:hover {
 
 /* Header Title */
 header h1 {
-    font-size: 3rem; /* Larger font for the header */
-    margin-bottom: 10px;
+    font-size: 4.5rem; /* Increased font size for a more prominent header */
+    margin-bottom: 20px; /* Adjusted margin for spacing */
 }
 
 header p {
-    font-size: 1.5rem; /* Increased font size for the tagline */
-    margin-bottom: 20px;
+    font-size: 1.6rem; /* Increased font size for the tagline */
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+    font-weight: 500;
 }
 
 /* Section */
@@ -162,11 +163,11 @@ footer a:hover {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 3rem; /* Reduced font size for mobile */
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 1.2rem; /* Adjusted font size for mobile */
     }
 
     .section h2 {
