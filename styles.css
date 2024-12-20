@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif; /* Apply Roboto font */
     line-height: 1.6;
-    color: #333;
+    color: #555;
 }
 
 /* Header */
@@ -23,6 +23,19 @@ header {
     text-align: center;
     padding: 20px;
     position: relative;
+}
+
+/* Special Header Style for Subpages */
+.subpage-header {
+    background: url('background.png') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;    
+    padding: 20px; /* Adjust padding for a cleaner look */
 }
 
 /* Menu Styles */
@@ -53,7 +66,7 @@ header .menu a:hover {
 
 /* Header Title */
 header h1 {
-    font-size: 4.5rem; /* Increased font size for a more prominent header */
+    font-size: 5rem; /* Increased font size for a more prominent header */
     margin-bottom: 20px; /* Adjusted margin for spacing */
 }
 
@@ -72,6 +85,13 @@ header p {
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #555;
+}
+
+.section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #555;
 }
 
 .section p {
@@ -106,6 +126,7 @@ header p {
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #555;
 }
 
 /* Custom List Styling */
@@ -210,3 +231,70 @@ footer a:hover {
         font-size: 1.1rem;
     }
 }
+
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.pain-points {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: #555;
+}
+
+.point {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.cta-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.why-this-works {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.why-this-works li {
+    margin: 1rem 0;
+}
+
+.why-this-works strong {
+    color: #006400; /* Green color for emphasis */
+}
+
+.about-section {
+    text-align: left; /* Aligns text to the left */
+    color: #555; /* Sets text color to a medium gray */
+    font-size: 1.2rem; /* Sets font size to make it readable */
+    line-height: 1.6; /* Increases line height for better readability */
+    margin-bottom: 2rem; /* Adds space between sections */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* Larger font for section headers */
+    margin-bottom: 1rem; /* Adds space below the section header */
+}
+
+.about-section p {
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+}
+
+.about-section a {
+    color: #f96c38; /* Green color for links to stand out */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.about-section a:hover {
+    text-decoration: underline; /* Adds underline on hover for better accessibility */
+}
+
+
