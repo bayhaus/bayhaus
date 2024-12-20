@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-    background: url('background.png') no-repeat center center/cover;
+    background: url('background-new.png') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     flex-direction: column;
