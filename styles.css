@@ -242,7 +242,7 @@ h3 {
     list-style-type: none;
     padding: 0;
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.5;
     font-style: italic;
     color: #555;
 }
@@ -255,6 +255,37 @@ h3 {
 .cta-section {
     margin-top: 2rem;
     text-align: center;
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes teeter-totter {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.cta-section h4 {
+    animation: growShrink 2s ease-in-out infinite;
 }
 
 .why-this-works {
